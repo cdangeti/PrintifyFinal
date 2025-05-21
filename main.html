@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printify - Premium 3D Printing Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #8b5cf6;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .testimonial-carousel {
+            position: relative;
+            width: 100%;
+        }
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-slide {
+            flex: 0 0 100%;
+        }
+        .carousel-dot.active {
+            background-color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-cube text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">Printify</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#products" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Products</a>
+                    <a href="#about" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#contact" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                        Bring Your Ideas to Life with 3D Printing
+                    </h1>
+                    <p class="mt-5 text-xl text-indigo-100">
+                        High-quality 3D printing services for businesses and individuals. Precision, speed, and reliability in every print.
+                    </p>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#products" class="btn-primary px-8 py-3 rounded-md text-lg font-semibold">
+                            View Products
+                        </a>
+                        <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                    <img src="https://store.ultimaker.com/media/catalog/product/cache/ef68cfc577d37d9254bf48297c3e6981/r/e/replicator__1.png"
+                         alt="3D Printer in action"
+                         class="rounded-lg shadow-2xl object-cover w-full h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Premium Products
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    High-quality materials and precision printing for all your needs
+                </p>
+            </div>
+
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="relative h-70">
+                        <img class="w-full h-full object-cover"
+                             src="2d18243fd04eee0bce961e5bb89b8ece_preview_card.webp"
+                             alt="Industrial 3D Printer">
+                        <div class="absolute top-4 right-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Industrial Grade</div>
+                        <h3 class="mt-2 text-2xl font-semibold text-gray-900">Flex Rex</h3>
+                        <p class="mt-2 text-gray-500">
+                           🦖 Flex Rex (x): Our best-selling flexible dinosaur is more than just a toy — it's a symbol of our roots in engineering and design. Printify’s Flex Rex combines dynamic joints and detailed features, making it both a fun fidget toy and a teaching tool for 3D articulation and modeling. We make $6 profit off of each Flex-Rex.
+
+                        </p>
+                        <div class="mt-4">
+                            <span class="text-3xl font-bold text-gray-900">$8</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">$10</span>
+                        </div>
+                        <div class="mt-6">
+                            <button class="btn-primary w-full py-3 px-6 rounded-md text-white font-medium">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>In stock - Ready to ship</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="relative h-70">
+                        <img class="w-full h-full object-cover"
+                             src="Benchy1_no_edits.jpg"
+                             alt="Desktop 3D Printer">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Home & Office</div>
+                        <h3 class="mt-2 text-2xl font-semibold text-gray-900">Mini-Boat</h3>
+                        <p class="mt-2 text-gray-500">
+                           🚤 Mini-Boats (y): Inspired by classic lake adventures and marine design, Miniboats are compact, colorful, and float-ready 3D prints. Whether you're a collector, a student, or just love miniatures, Miniboats show off the power of detailed printing with real functionality. We make a $4 profit off of each Mini-Boat
+                        <div class="mt-4">
+                            <span class="text-3xl font-bold text-gray-900">$6</span>
+                            <span class="text-sm text-gray-500 line-through ml-2">$8</span>
+                        </div>
+                        <div class="mt-6">
+                            <button class="btn-primary w-full py-3 px-6 rounded-md text-white font-medium">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>In stock - Ready to ship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Why Choose Printify?
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We combine cutting-edge technology with exceptional service
+                </p>
+            </div>
+
+
+            <div class="mt-20">
+                <div class="grid gap-10 md:grid-cols-3">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                            <i class="fas fa-bolt text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Fast Turnaround</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Get your prints delivered in as little as 24 hours with our express service.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                            <i class="fas fa-layer-group text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Wide Material Selection</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Choose from PLA, ABS, PETG, TPU, and specialty materials like wood and metal composites.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                            <i class="fas fa-headset text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Expert Support</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Our team of 3D printing experts is available to help with your project from design to delivery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1623874514711-0f321325f318?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                         alt="Our 3D printing facility"
+                         class="rounded-lg shadow-xl object-cover w-full h-96">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mt-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        About Printify
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-500">
+                        Founded in 2015, Printify has grown from a small startup to a leading provider of 3D printing solutions. Our mission is to make 3D printing accessible to everyone while maintaining the highest standards of quality.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Award-Winning Quality</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    Recognized by the 3D Printing Industry Awards for innovation and quality in 2022.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Global Reach</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    We've shipped to over 45 countries, helping creators and businesses worldwide bring their ideas to life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    What Our Customers Say
+                </h2>
+            </div>
+            <div class="mt-16 relative">
+                <div class="testimonial-carousel overflow-hidden">
+                    <div class="testimonial-track flex transition-transform duration-500 ease-in-out">
+                        <div class="testimonial-slide min-w-full">
+                            <div class="bg-white p-12 rounded-lg shadow">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-15 w-16 rounded-full" src="sac.jpg" >
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-lg font-medium text-gray-900">Sachin Vijay</div>
+                                        <div class="text-indigo-600">Mount Olive High School Student</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-gray-500">
+                                        "I attached my gold Flex Rex to my Chain. This is why im the glourious goat of tennis."
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full">
+                            <div class="bg-white p-10 rounded-lg shadow">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-20 w-18 rounded-full" src="WIN_20250521_08_31_49_Pro.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-lg font-medium text-gray-900">Vivek The Great</div>
+                                        <div class="text-indigo-600">2nd Smartest Sophmore</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-gray-500">
+                                        "We purchased 100000 mini boats. They're reliable, easy to use, and perfect for student projects. The support team is fantastic too."
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full">
+                            <div class="bg-white p-8 rounded-lg shadow">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-18 w-16 rounded-full" src="photoshop2 samanyu (1).jpeg" alt="">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-lg font-medium text-gray-900">Sumunuyu</div>
+                                        <div class="tet-indigo-600">Small Business Owner</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-gray-500">
+                                        "As a small business, 3D printing. It's paid for itself many times over with the custom products we now offer."
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                </div>
+                            </div>
+                        </div>
+              
+                
+                  <div class="testimonial-slide min-w-full">
+                            <div class="bg-white p-8 rounded-lg shadow">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-18 w-16 rounded-full" src="Screenshot 2025-05-21 092304.png" alt="">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-lg font-medium text-gray-900">Dhiraj Banerjee</div>
+                                        <div class="tet-indigo-600">Aura King</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-gray-500">
+                                        "Get a gold rex to be great like me"
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full">
+                            <div class="bg-white p-8 rounded-lg shadow">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-18 w-16 rounded-full" src="adobephotoshop1.jpeg" alt="">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-lg font-medium text-gray-900">Armaan Virdi</div>
+                                        <div class="tet-indigo-600">El Primo</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-gray-500">
+                                        "I got a boat for us"
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button class="carousel-prev bg-white p-2 rounded-full shadow hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-chevron-left text-indigo-600"></i>
+                    </button>
+                    <button class="carousel-next bg-white p-2 rounded-full shadow hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-chevron-right text-indigo-600"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300 focus:outline-none"></button>
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300 focus:outline-none"></button>
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300 focus:outline-none"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Get In Touch
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-500">
+                        Have questions about our products or services? Our team is ready to help you with your 3D printing needs.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Location</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    520 West Main Street, Rockaway, New Jersey
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Phone</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    +1 398 333 3983 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Email</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    hello@printify.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0 lg:pl-12">
+                    <div class="bg-white shadow-xl rounded-lg p-8">
+                        <h3 class="text-lg font-medium text-gray-900 mb-6">Send us a message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                                <select id="subject" name="subject" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                    <option>General Inquiry</option>
+                                    <option>Product Support</option>
+                                    <option>Sales Question</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                            </div>
+                            <div class="mt-6">
+                                <button type="submit" class="btn-primary w-full py-3 px-6 rounded-md text-white font-medium">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold">Stay Updated</h2>
+                    <p class="mt-2 max-w-2xl">
+                        Subscribe to our newsletter for the latest product updates, special offers, and 3D printing tips.
+                    </p>
+                </div>
+                <div class="mt-8 lg:mt-0 lg:w-1/2">
+                    <form class="sm:flex">
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="w-full px-5 py-3 border border-transparent placeholder-gray-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white focus:border-white sm:max-w-xs rounded-md" placeholder="Enter your email">
+                        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                            <button type="submit" class="w-full bg-white text-indigo-600 px-5 py-3 border border-transparent rounded-md font-medium hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">ProPrint X500</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">MiniPrint 200</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Materials</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Guides</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">API Status</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="mt-8 md:mt-0 text-base text-gray-400">
+                    &copy; 2025 Printify, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+               
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        // Simple form submission handler
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.testimonial-track');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const prevButton = document.querySelector('.carousel-prev');
+            const nextButton = document.querySelector('.carousel-next');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateCarousel();
+            }
+
+            // Event listeners
+            if (nextButton) {
+                nextButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    nextSlide();
+                });
+            }
+
+            if (prevButton) {
+                prevButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    prevSlide();
+                });
+            }
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+        // Add to cart functionality
+        document.querySelectorAll('button:contains("Add to Cart")').forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.closest('.product-card').querySelector('h3').textContent;
+                alert(`Added ${productName} to your cart!`);
+            });
+        });
+            // Auto-advance slides every 5 seconds
+            let autoSlide = setInterval(nextSlide, 5000);
+
+            // Pause auto-advance when hovering over the carousel
+            const carousel = document.querySelector('.testimonial-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', () => {
+                    clearInterval(autoSlide);
+                });
+                carousel.addEventListener('mouseleave', () => {
+                    autoSlide = setInterval(nextSlide, 5000);
+                });
+            }
+
+            // Initialize first dot as active
+            if (dots.length > 0) {
+                dots[0].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
